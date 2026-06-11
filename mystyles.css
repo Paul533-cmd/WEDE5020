@@ -1,0 +1,105 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+p{
+    font-size: 10pt;
+}
+
+h1{
+    color: red;
+}
+
+header{
+    background-color: bisque;
+}
+
+footer{
+    background-color: aqua;
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    background-color: blanchedalmond;
+}
+
+.navigation a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.navigation :hover{
+    background-color: beige;
+}
+
+img{
+max-width: 100%;
+height: auto;
+}
+/*container for the webpage layout*/
+.container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    /*background-color: blueviolet;*/
+    padding: 20px;
+}
+
+.container div{
+    background-color: aqua;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+  .navigation{
+    display: block;
+    list-style-type: none;
+    gap: 20px;
+    background-color: blanchedalmond;
+    text-align: center;
+    font-size: 8pt;
+}
+
+.navigation a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.navigation :hover{
+    background-color: beige;
+}
+
+h1{
+    font-size: 14pt;
+}
+
+p{
+    font-size: 8pt;
+}
+
+.container{
+    display: inline-block;
+    grid-template-rows: auto auto auto;
+    /*background-color: blueviolet;*/
+    padding: 20px;
+}
+
+}
